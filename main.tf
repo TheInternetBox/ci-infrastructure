@@ -36,7 +36,7 @@ module "runners" {
   runners_lambda_zip                = "runners.zip"
 
   enable_organization_runners = true
-  runner_extra_labels         = "default,ephemeral"
+  runner_extra_labels         = "linux,self-hosted,default,ephemeral"
 
   # enable workflow labels check
   # runner_enable_workflow_job_labels_check = true
