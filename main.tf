@@ -60,7 +60,7 @@ module "runners" {
   runner_boot_time_in_minutes = 1
 
   # override scaling down
-  # scale_down_schedule_expression = "cron(* * * * ? *)"
+  scale_down_schedule_expression = "cron(* * * * ? *)"
 
   enable_ephemeral_runners = true
 
