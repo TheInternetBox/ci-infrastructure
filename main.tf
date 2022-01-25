@@ -57,6 +57,8 @@ module "runners" {
   # Ensure you set the number not too low, each build require a new instance
   runners_maximum_count = 5
 
+  runner_boot_time_in_minutes = 1
+
   # override scaling down
   # scale_down_schedule_expression = "cron(* * * * ? *)"
 
