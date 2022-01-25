@@ -77,7 +77,7 @@ module "runners" {
   # ami_owners       = [data.aws_caller_identity.current.account_id]
 
   # Enable logging
-  log_level = "debug"
+  log_level = "info"
 
   volume_size = 60
 
