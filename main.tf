@@ -44,12 +44,12 @@ module "runners" {
   # enable access to the runners via SSM
   enable_ssm_on_runners = true
 
-  instance_max_spot_price = "0.89"
+  instance_max_spot_price = "1.00"
 
   # Let the module manage the service linked role
   create_service_linked_role_spot = true
 
-  instance_types = ["c5ad.8xlarge", "c4.8xlarge", "c5.9xlarge", "c5.12xlarge", "c5.18xlarge", "c5.24xlarge", "c5a.8xlarge", "c5a.12xlarge", "c5a.16xlarge", "c5a.24xlarge"]
+  instance_types = ["c5ad.8xlarge", "c5d.9xlarge", "c5d.12xlarge", "m5.8xlarge", "m5a.8xlarge", "m5ad.8xlarge", "c6i.12xlarge", "c6i.8xlarge", "c5n.9xlarge", "c5ad.16xlarge", "c5ad.12xlarge", "c4.8xlarge", "c5.9xlarge", "c5.12xlarge", "c5.18xlarge", "c5.24xlarge", "c5a.8xlarge", "c5a.12xlarge", "c5a.16xlarge", "c5a.24xlarge"]
 
   # override delay of events in seconds
   delay_webhook_event = 0
