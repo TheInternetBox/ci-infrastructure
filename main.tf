@@ -44,7 +44,7 @@ module "runners" {
   # enable access to the runners via SSM
   enable_ssm_on_runners = true
 
-  instance_max_spot_price = "0.35"
+  instance_max_spot_price = "0.89"
 
   # Let the module manage the service linked role
   create_service_linked_role_spot = true
