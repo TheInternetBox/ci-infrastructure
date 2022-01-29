@@ -66,10 +66,10 @@ module "runners" {
 
   # # Example of simple pool usages
   pool_runner_owner = "TheInternetBox"
-  pool_config = [{
-    size                = 5
-    schedule_expression = "cron(* * * * ? *)"
-  }]
+  // pool_config = [{
+  //   size                = 5
+  //   schedule_expression = "cron(* * * * ? *)"
+  // }]
 
   # configure your pre-built AMI
   # enabled_userdata = false
