@@ -15,10 +15,11 @@ resource "random_id" "random" {
 data "aws_caller_identity" "current" {}
 
 module "runners" {
-  source                          = "philips-labs/github-runner/aws"
-  aws_region                      = var.aws_region
-  vpc_id                          = module.vpc.vpc_id
-  subnet_ids                      = module.vpc.private_subnets
+  source     = "philips-labs/github-runner/aws"
+  version    = "0.40.4"
+  aws_region = var.aws_region
+  vpc_id     = module.vpc.vpc_id
+  subnet_ids = module.vpc.private_subnets
 
   environment = var.environment
   tags = {
